@@ -19,9 +19,9 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/design-desk.jpeg";
+import image from "../images/background.jpeg";
 
-const imageAltText = "desktop with books and laptop";
+const imageAltText = "Abstract composition with soft, flowing lines and wave-like patterns in shades of blue and white. It features circular elements and a clean, modern aesthetic, evoking a sense of calmness and minimalism.";
 
 /**
  * Project list
