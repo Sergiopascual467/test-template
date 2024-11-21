@@ -16,15 +16,15 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a image you
  * freely use on your site.
  */
-import image from "../images/fondo-web.jpg";
+import image from "../images/motion-background.jpg";
 
-const imageAltText = "minimalistic background with graphs";
+const imageAltText = "purple and blue abstract background";
 
 /**
  * Sort description that expands on your title on the Home component.
  */
 const description =
-  "I'm student studying at University of NAvarra. I enjoy creating unique and simplistic user interfaces in creative ways.";
+  "I'm student studying at University of Navarra. I enjoy creating unique and simplistic user interfaces in creative ways.";
 
 /**
  * List of some of skills or technologies you work on, are learning,
