@@ -19,7 +19,7 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/data-fondo.jpg";
+import image from "../images/data-fondo.jpg"
 
 const imageAltText = "Technological background with financial charts, bars, and digital data on a blue backdrop."
 
