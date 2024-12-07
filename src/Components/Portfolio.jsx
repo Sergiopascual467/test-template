@@ -18,8 +18,9 @@ import React from "react";
  *
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
- */const image = require("../../images/web-background.jpeg");
-<img src={image} alt="technological background with interconnected digital nodes and circuits." />
+ */import image from "../../__images__/data-fondo.jpeg";
+ const imageAltText = "Technological background with interconnected digital nodes and circuits.";
+ 
 
 /**
  * Project list

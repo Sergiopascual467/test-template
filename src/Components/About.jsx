@@ -18,7 +18,7 @@ import React from "react";
  */
 import image from "../../images/data-fondo.jpeg"; 
 
-const imageAltText = "Technological background with financial charts, bars, and digital data on a blue backdrop."
+const imageAltText = "technological background with financial charts, data grids, and glowing blue highlights."
 
 /**
  * Sort description that expands on your title on the Home component.

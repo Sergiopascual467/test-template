@@ -22,7 +22,7 @@ import PropTypes from "prop-types";
  */
 import image from "../images/data-fondo.jpeg";
 
-const imageAltText = "Technological background with financial charts, bars, and digital data on a blue backdrop.";
+const imageAltText = "technological background with financial charts, data grids, and glowing blue highlights";
 
 const Home = ({ name, title }) => {
   return (
