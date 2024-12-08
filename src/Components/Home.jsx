@@ -1,17 +1,20 @@
 import React from "react";
 import PropTypes from "prop-types";
 import arrowSvg from "../images/down-arrow.svg";
-import image from "../assets/images/data-fondo.jpeg"; // Corrected import path
+import image from "../assets/images/data-fondo.jpeg";
 
 const imageAltText = "Technological background with financial charts, data grids, and glowing blue highlights";
 
 const Home = ({ name, title }) => {
-  // Inline styles for better readability and maintainability
+  // Inline styles with explicit image sizing
   const styles = {
     section: {
       position: "relative",
       minHeight: "100vh",
-      overflow: "hidden",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      textAlign: "center",
     },
     backgroundImage: {
       position: "absolute",
@@ -19,25 +22,22 @@ const Home = ({ name, title }) => {
       left: 0,
       width: "100%",
       height: "100%",
-      objectFit: "cover",
+      objectFit: "cover", // Ensures the image covers the background without distortion
       zIndex: -1,
     },
     content: {
-      position: "absolute",
-      top: "5rem",
-      left: "2rem",
-      width: "17rem",
-      color: "#fff", // Ensure text color contrasts well with the background
+      zIndex: 1,
+      color: "#fff",
     },
     scrollIndicator: {
       position: "absolute",
-      bottom: "3rem",
+      bottom: "2rem",
       left: "50%",
       transform: "translateX(-50%)",
     },
     arrowImage: {
-      height: "3rem",
-      width: "3rem",
+      height: "2rem",
+      width: "2rem",
     },
   };
 
