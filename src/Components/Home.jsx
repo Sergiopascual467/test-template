@@ -29,11 +29,11 @@ const Home = ({ name, title }) => {
       color: "#fff",
     },
     name: {
-      fontSize: "2.5rem", // Smaller font size for the name
+      fontSize: "4rem", // Increased font size for the name
       marginBottom: "0.5rem",
     },
     title: {
-      fontSize: "1.8rem", // Adjusted font size for the title
+      fontSize: "2.5rem", // Increased font size for the title
     },
     scrollIndicator: {
       position: "absolute",
