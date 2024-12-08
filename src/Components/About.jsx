@@ -23,9 +23,22 @@ const detailOrQuote = "Turning data into decisions is the future of business suc
 
 const About = () => {
   return (
-    <section className="padding" id="about" style={{ color: "white" }}>
+    <section
+      id="about"
+      style={{
+        color: "white",
+        position: "relative",
+        width: "100vw", // Full viewport width
+        height: "100vh", // Full viewport height
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        textAlign: "center", // Center text alignment
+        overflow: "hidden", // Prevent any overflow
+      }}
+    >
+      {/* Background Image */}
       <img
-        className="background"
         src={image}
         alt={imageAltText}
         style={{
@@ -35,26 +48,23 @@ const About = () => {
           width: "100%",
           height: "100%",
           objectFit: "cover",
-          zIndex: -1,
+          zIndex: -1, // Send image behind content
         }}
       />
+      {/* Content Section */}
       <div
-        className="about-section"
         style={{
-          color: "white",
-          maxWidth: "800px", // Center and limit the text width
-          margin: "0 auto", // Center the content horizontally
+          maxWidth: "800px", // Center and limit the width
           padding: "2rem",
-          textAlign: "center", // Center align the text
         }}
       >
         <h2>About Myself</h2>
-        <p className="large">{description}</p>
-        <hr />
+        <p style={{ fontSize: "1.2rem", marginBottom: "1rem" }}>{description}</p>
+        <hr style={{ margin: "1.5rem 0", borderColor: "rgba(255, 255, 255, 0.5)" }} />
         <h3>Achievements</h3>
-        <p className="large">{achievements}</p>
-        <hr />
-        <p className="about-quote">{detailOrQuote}</p>
+        <p style={{ fontSize: "1.2rem", lineHeight: "1.6" }}>{achievements}</p>
+        <hr style={{ margin: "1.5rem 0", borderColor: "rgba(255, 255, 255, 0.5)" }} />
+        <p style={{ fontStyle: "italic", fontSize: "1.2rem" }}>{detailOrQuote}</p>
       </div>
     </section>
   );
