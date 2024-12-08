@@ -41,17 +41,20 @@ const Portfolio = () => {
   return (
     <section
       style={{
-        backgroundImage: `url(${image})`, // Set the background image
-        backgroundSize: "cover", // Ensure the image covers the entire section
-        backgroundPosition: "center", // Center the image
-        backgroundRepeat: "no-repeat", // Prevent tiling
-        padding: "4rem 2rem", // Add some padding for content
-        color: "white", // Set text color to white for contrast
-        textShadow: "1px 1px 2px rgba(0, 0, 0, 0.8)", // Add text shadow for readability
+        backgroundImage: `url(${image})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        padding: "4rem 2rem",
+        color: "white",
+        textShadow: "1px 1px 2px rgba(0, 0, 0, 0.8)",
       }}
       id="portfolio"
+      aria-label={imageAltText} // Added for screen readers
     >
-      <h2 style={{ fontSize: "2rem", marginBottom: "2rem" }}>Portfolio</h2>
+      <h2 style={{ fontSize: "2rem", marginBottom: "2rem", textAlign: "center" }}>
+        Portfolio
+      </h2>
 
       {/* Project List Section */}
       <div
@@ -59,9 +62,10 @@ const Portfolio = () => {
           maxWidth: "800px",
           marginLeft: "auto",
           marginRight: "auto",
-          backgroundColor: "rgba(0, 0, 0, 0.6)", // Add a semi-transparent background for contrast
+          backgroundColor: "rgba(0, 0, 0, 0.7)", // Improved contrast
           padding: "1.5rem",
           borderRadius: "8px",
+          boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)", // Added subtle shadow
         }}
       >
         {projectList.map((project) => (
@@ -75,6 +79,15 @@ const Portfolio = () => {
               boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
               marginBottom: "1rem",
               textAlign: "left",
+              transition: "transform 0.2s, box-shadow 0.2s", // Smooth hover effect
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "scale(1.02)";
+              e.currentTarget.style.boxShadow = "0px 6px 12px rgba(0, 0, 0, 0.2)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = "scale(1)";
+              e.currentTarget.style.boxShadow = "0px 4px 6px rgba(0, 0, 0, 0.1)";
             }}
           >
             <a
@@ -84,11 +97,17 @@ const Portfolio = () => {
               style={{
                 textDecoration: "none",
                 color: "#333",
+                display: "block",
+                transition: "color 0.2s", // Smooth color transition
               }}
+              onMouseEnter={(e) => (e.currentTarget.style.color = "#007bff")} // Hover color
+              onMouseLeave={(e) => (e.currentTarget.style.color = "#333")}
             >
               <h3 style={{ margin: "0 0 0.5rem", fontSize: "1.25rem" }}>{project.title}</h3>
             </a>
-            <p style={{ fontSize: "1rem", color: "#555" }}>{project.description}</p>
+            <p style={{ fontSize: "1rem", color: "#555", marginBottom: "0" }}>
+              {project.description}
+            </p>
           </div>
         ))}
       </div>
