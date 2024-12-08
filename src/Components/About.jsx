@@ -14,8 +14,8 @@ const description =
 
 const achievements = `
   3x Top 2 in the BMX Latin American Ranking,
-  5x National Champion (BMX),
-  5x Regional Champion(BMX),
+  5x BMX National Champion,
+  5x BMX Regional Champion,
   1x Quarterfinalist in the BMX World Championship 2016.
 `;
 
