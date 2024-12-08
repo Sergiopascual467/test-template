@@ -10,7 +10,8 @@ import image from "../assets/images/web-background.jpeg";
 const imageAltText = "Abstract technological background with interconnected glowing nodes and circuits on a dark blue grid.";
 
 const description =
-  "First-year Business and Data Analytics student at the University of Navarra, passionate about leveraging data to drive business insights.";
+  "As a competitive BMX athlete and a first-year Business and Data Analytics student at the University of Navarra, I’ve learned how precision, data, and strategy shape both sports and business success.";
+
 
 const achievements = `
   3x Top 2 in the Latin American Ranking,
