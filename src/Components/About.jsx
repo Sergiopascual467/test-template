@@ -12,13 +12,15 @@ const imageAltText = "Abstract technological background with interconnected glow
 const description =
   "As a competitive BMX athlete and a first-year Business and Data Analytics student at the University of Navarra, I’ve learned how precision, data, and strategy shape both sports and business success.";
 
-
 const achievements = `
   3x Top 2 in the Latin American Ranking,
   5x National Champion (BMX),
   5x Regional Champion,
   1x Quarterfinalist in the BMX World Championship 2016.
 `;
+
+const quote =
+  "Success is the sum of small efforts, repeated day in and day out—just as in BMX, consistency and precision make all the difference in achieving success, whether on the track or in business.";
 
 const About = () => {
   return (
@@ -63,6 +65,8 @@ const About = () => {
         <h3>Achievements</h3>
         <p style={{ fontSize: "1.2rem", lineHeight: "1.6" }}>{achievements}</p>
         <hr style={{ margin: "1.5rem 0", borderColor: "rgba(255, 255, 255, 0.5)" }} />
+        <h3>Quote</h3>
+        <p style={{ fontStyle: "italic", fontSize: "1.2rem" }}>{quote}</p>
       </div>
     </section>
   );
