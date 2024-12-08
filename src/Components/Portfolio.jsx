@@ -6,10 +6,9 @@
  */
 
 import React from "react";
-import image from "../assets/images/data-fondo.jpeg"; // Ensure the path is correct
+import image from "../assets/images/web-background.jpeg"; // Ensure the path is correct
 
-const imageAltText = "Technological background with interconnected digital nodes and circuits.";
-
+const imageAltText = "Abstract technological background with interconnected glowing nodes and circuits on a dark blue grid.";
 const projectList = [
   {
     title: "My First Web",

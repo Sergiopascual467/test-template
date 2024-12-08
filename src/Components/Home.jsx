@@ -1,10 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import arrowSvg from "../images/down-arrow.svg";
-import image from "../assets/images/data-fondo.jpeg";
+import image from "../assets/images/web-background.jpeg";
 
-const imageAltText = "Technological background with financial charts, data grids, and glowing blue highlights";
-
+const imageAltText = "Abstract technological background with interconnected glowing nodes and circuits on a dark blue grid.";
 const Home = ({ name, title }) => {
   // Inline styles with explicit image sizing
   const styles = {

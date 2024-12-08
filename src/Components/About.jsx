@@ -5,11 +5,11 @@
  */
 
 import React from "react";
-import image from "../assets/images/data-fondo.jpeg";
+import image from "../assets/images/web-background.jpeg";
 
-const imageAltText = "Technological background with financial charts, data grids, and glowing blue highlights.";
+const imageAltText = "Abstract technological background with interconnected glowing nodes and circuits on a dark blue grid.";
 
-const description = "I'm a student studying Business and Data Analytics at University of Navarra. I enjoy creating unique and simplistic user interfaces in creative ways.";
+const description = "First-year Business and Data Analytics student at the University of Navarra, passionate about leveraging data to drive business insights.";
 
 const skillsList = [
   "Web design",
@@ -19,7 +19,7 @@ const skillsList = [
 ];
 
 const detailOrQuote =
-  "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my UI/UX experience, I continually look for new and better ways to make tech accessible to all.";
+  "Turning data into decisions is the future of business success.";
 
 const About = () => {
   return (
