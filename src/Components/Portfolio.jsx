@@ -9,6 +9,7 @@ import React from "react";
 import image from "../assets/images/web-background.jpeg"; // Ensure the path is correct
 
 const imageAltText = "Abstract technological background with interconnected glowing nodes and circuits on a dark blue grid.";
+
 const projectList = [
   {
     title: "My First Web",
@@ -37,79 +38,70 @@ const projectList = [
 ];
 
 const Portfolio = () => {
-  return (
-    <section
-      style={{
-        backgroundImage: `url(${image})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        padding: "4rem 2rem",
-        color: "white",
-        textShadow: "1px 1px 2px rgba(0, 0, 0, 0.8)",
-      }}
-      id="portfolio"
-      aria-label={imageAltText} // Added for screen readers
-    >
-      <h2 style={{ fontSize: "2rem", marginBottom: "2rem", textAlign: "center" }}>
-        Portfolio
-      </h2>
+  const styles = {
+    section: {
+      backgroundImage: `url(${image})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
+      color: "white",
+      textShadow: "1px 1px 4px rgba(0, 0, 0, 0.9)", // Improved text readability
+      padding: "4rem 2rem",
+      minHeight: "100vh", // Full viewport height
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "center",
+      alignItems: "center",
+    },
+    title: {
+      fontSize: "3rem",
+      marginBottom: "3rem",
+      textAlign: "center",
+    },
+    projectList: {
+      listStyle: "none",
+      padding: 0,
+      margin: 0,
+      textAlign: "center",
+      width: "100%",
+    },
+    projectItem: {
+      marginBottom: "2rem",
+    },
+    projectLink: {
+      color: "white",
+      textDecoration: "none",
+      fontSize: "1.8rem",
+      fontWeight: "bold",
+      transition: "color 0.3s ease",
+    },
+    projectDescription: {
+      marginTop: "0.5rem",
+      fontSize: "1.2rem",
+      color: "rgba(255, 255, 255, 0.8)", // Slightly lighter for description
+    },
+  };
 
-      {/* Project List Section */}
-      <div
-        style={{
-          maxWidth: "800px",
-          marginLeft: "auto",
-          marginRight: "auto",
-          backgroundColor: "rgba(0, 0, 0, 0.7)", // Improved contrast
-          padding: "1.5rem",
-          borderRadius: "8px",
-          boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)", // Added subtle shadow
-        }}
-      >
+  return (
+    <section id="portfolio" style={styles.section}>
+      <h2 style={styles.title}>Portfolio</h2>
+      <ul style={styles.projectList}>
         {projectList.map((project) => (
-          <div
-            key={project.title}
-            style={{
-              backgroundColor: "#fff",
-              color: "#333",
-              padding: "1rem",
-              borderRadius: "8px",
-              boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
-              marginBottom: "1rem",
-              textAlign: "left",
-              transition: "transform 0.2s, box-shadow 0.2s", // Smooth hover effect
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.transform = "scale(1.02)";
-              e.currentTarget.style.boxShadow = "0px 6px 12px rgba(0, 0, 0, 0.2)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.transform = "scale(1)";
-              e.currentTarget.style.boxShadow = "0px 4px 6px rgba(0, 0, 0, 0.1)";
-            }}
-          >
+          <li key={project.title} style={styles.projectItem}>
             <a
               href={project.url}
               target="_blank"
               rel="noopener noreferrer"
-              style={{
-                textDecoration: "none",
-                color: "#333",
-                display: "block",
-                transition: "color 0.2s", // Smooth color transition
-              }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = "#007bff")} // Hover color
-              onMouseLeave={(e) => (e.currentTarget.style.color = "#333")}
+              style={styles.projectLink}
+              onMouseEnter={(e) => (e.target.style.color = "#00bfff")} // Light blue hover effect
+              onMouseLeave={(e) => (e.target.style.color = "white")}
             >
-              <h3 style={{ margin: "0 0 0.5rem", fontSize: "1.25rem" }}>{project.title}</h3>
+              {project.title}
             </a>
-            <p style={{ fontSize: "1rem", color: "#555", marginBottom: "0" }}>
-              {project.description}
-            </p>
-          </div>
+            <p style={styles.projectDescription}>{project.description}</p>
+          </li>
         ))}
-      </div>
+      </ul>
     </section>
   );
 };
