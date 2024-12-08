@@ -19,8 +19,6 @@ const achievements = `
   1x Quarterfinalist in the BMX World Championship 2016.
 `;
 
-const detailOrQuote = "Just like in BMX, where data-driven strategies propel athletes to the top, the same principles of leveraging data to make informed decisions can drive success in business.";
-
 const About = () => {
   return (
     <section
@@ -64,7 +62,6 @@ const About = () => {
         <h3>Achievements</h3>
         <p style={{ fontSize: "1.2rem", lineHeight: "1.6" }}>{achievements}</p>
         <hr style={{ margin: "1.5rem 0", borderColor: "rgba(255, 255, 255, 0.5)" }} />
-        <p style={{ fontStyle: "italic", fontSize: "1.2rem" }}>{detailOrQuote}</p>
       </div>
     </section>
   );
