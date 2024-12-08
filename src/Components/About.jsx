@@ -19,7 +19,7 @@ const achievements = `
   1x Quarterfinalist in the BMX World Championship 2016.
 `;
 
-const detailOrQuote = "Turning data into decisions is the future of business success.";
+const detailOrQuote = "Just like in BMX, where data-driven strategies propel athletes to the top, the same principles of leveraging data to make informed decisions can drive success in business.";
 
 const About = () => {
   return (
