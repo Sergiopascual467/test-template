@@ -14,10 +14,10 @@ const Home = ({ name, title }) => {
       display: "flex",
       flexDirection: "column",
       justifyContent: "center",
-      alignItems: "center",
-      textAlign: "center",
+      alignItems: "flex-start", // Align content to the left
+      textAlign: "left", // Align text to the left
       margin: 0, // Remove default margins
-      padding: 0,
+      padding: "2rem", // Add padding to create space from edges
       overflow: "hidden", // Prevent overflow issues
       backgroundImage: `url(${image})`, // Set the image as the background
       backgroundSize: "cover", // Ensure the background image covers the entire section
@@ -27,7 +27,13 @@ const Home = ({ name, title }) => {
     content: {
       zIndex: 1, // Bring text to the front
       color: "#fff",
-      padding: "1rem",
+    },
+    name: {
+      fontSize: "2rem", // Smaller font size for the name
+      marginBottom: "0.5rem",
+    },
+    title: {
+      fontSize: "1.5rem", // Adjusted font size for the title
     },
     scrollIndicator: {
       position: "absolute",
@@ -46,8 +52,8 @@ const Home = ({ name, title }) => {
     <section id="home" style={styles.section}>
       {/* Content */}
       <div style={styles.content}>
-        <h1>{name}</h1>
-        <h2>{title}</h2>
+        <h1 style={styles.name}>{name}</h1>
+        <h2 style={styles.title}>{title}</h2>
       </div>
       
       {/* Scroll Indicator */}
