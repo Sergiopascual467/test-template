@@ -12,28 +12,28 @@ const imageAltText = "Abstract technological background with interconnected glow
 
 const projectList = [
   {
-    title: "My First Web",
+    title: "Personal Portfolio",
     description:
-      "Collaboration to create a beginner-friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "This is my personal portfolio showcasing my skills, projects, and achievements. Designed to highlight my improvement in javascript.",
+    url: "https://your-portfolio-link.com", // Replace with your actual portfolio link
   },
   {
-    title: "My Web Development",
+    title: "GitHub Projects",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/Sergiopascual467/test-template",
+      "Explore my GitHub repository featuring various web development and data-driven projects, including unique interfaces and analytics tools.",
+    url: "https://github.com/Sergiopascual467", // Replace with your actual GitHub profile link
   },
   {
-    title: "My Resume Site",
+    title: "University Projects",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub Pages. Includes my experience and design abilities.",
-    url: "https://github.com/Sergiopascual467/test-template",
+      "A collection of academic projects showcasing my work in Business and Data Analytics, developed during my time at the University of Navarra.",
+    url: "https://your-university-projects-link.com", // Replace with your actual university project link
   },
   {
-    title: "GitHub Codespaces and GitHub.dev",
+    title: "Web Development Contributions",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "Highlights my contributions to open-source projects, including front-end design, back-end logic, and collaborative development.",
+    url: "https://your-open-source-link.com", // Replace with your actual open-source contributions link
   },
 ];
 
