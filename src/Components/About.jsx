@@ -13,9 +13,9 @@ const description =
   "As a competitive BMX athlete and a first-year Business and Data Analytics student at the University of Navarra, I’ve learned how precision, data, and strategy shape both sports and business success.";
 
 const achievements = `
-  3x Top 2 in the Latin American Ranking,
+  3x Top 2 in the BMX Latin American Ranking,
   5x National Champion (BMX),
-  5x Regional Champion,
+  5x Regional Champion(BMX),
   1x Quarterfinalist in the BMX World Championship 2016.
 `;
 
