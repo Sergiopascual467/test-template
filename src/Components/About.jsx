@@ -36,6 +36,7 @@ const About = () => {
         alignItems: "center",
         textAlign: "center", // Center text alignment
         overflow: "hidden", // Prevent any overflow
+        fontFamily: "'-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', sans-serif", // Apple system font
       }}
     >
       {/* Background Image */}

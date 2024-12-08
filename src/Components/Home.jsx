@@ -31,6 +31,7 @@ const Home = ({ name, title }) => {
     name: {
       fontSize: "4rem", // Increased font size for the name
       marginBottom: "0.5rem",
+      fontFamily: "'-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', sans-serif", // Apple's system font stack
     },
     title: {
       fontSize: "2.5rem", // Increased font size for the title

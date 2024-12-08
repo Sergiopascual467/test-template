@@ -52,6 +52,7 @@ const Portfolio = () => {
       flexDirection: "column",
       justifyContent: "center",
       alignItems: "center",
+      fontFamily: "'-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', sans-serif", // Font similar to Apple's system font
     },
     title: {
       fontSize: "3rem",
